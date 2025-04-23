@@ -40,6 +40,29 @@ In this exercise you'll provision an Azure Stream Analytics job in your Azure su
   ```bash
   git clone https://github.com/MicrosoftLearning/dp-203-azure-data-engineer.git
   cd dp-203-azure-data-engineer/Allfiles/Labs/17
+----
+
+### 4. Create a Stream Analytics Job
+Go to Azure Portal and create a Stream Analytics Job.
+Set Region, Resource Group, and give it a name.
+Once created, go to Inputs and add a Stream input from Event Hub.
+Go to Outputs and add a Blob Storage output.
+
+### 5. Define the Query
+Use the query to summarize event data
+
+### 6. Start the Stream Analytics Job
+Review input/output/query settings.
+Start the job and observe the real-time processing.
+Confirm that output files are being written to the Storage container.
+
+### ✅ Expected Results
+You should see .json or .csv files appearing in your storage container, containing summarized event data by device per minute.
+
+### 🧹 Cleanup
+To avoid extra costs:
+Stop the Stream Analytics Job.
+Delete the Event Hub, Storage account, and other related resources.
 
 
 ---
