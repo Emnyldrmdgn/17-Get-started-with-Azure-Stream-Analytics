@@ -1,22 +1,48 @@
 # 17-Get-started-with-Azure-Stream-Analytics
 In this exercise you'll provision an Azure Stream Analytics job in your Azure subscription, and use it to query and summarize a stream of real-time event data and store the results in Azure Storage.
 
-## 📘 Description
-In this lab, you will configure and use **Change Data Capture (CDC)** in Azure Synapse Analytics to ingest data incrementally from a SQL database to a data lake (Blob Storage). You’ll simulate order data changes and ingest only the changed data using Synapse Pipelines.
+---
+
+## 🧠 Objectives
+
+- Provision an Azure Event Hub to simulate incoming event data.
+- Create an Azure Stream Analytics job to process the event stream.
+- Configure input, query, and output for the analytics job.
+- Store the summarized results in Azure Blob Storage.
 
 ---
 
-## 🧰 Prerequisites
+## 🛠️ Prerequisites
+
 - An active Azure subscription
-- Azure Synapse workspace with:
-  - Integration Runtime configured
-  - Linked services to Azure SQL Database and Azure Data Lake Storage Gen2
-- SQL Admin permissions on Azure SQL Database
-- Azure Storage account (Blob) linked to Synapse
+- Azure CLI or Azure Portal access
+- Basic familiarity with Azure resources (Event Hubs, Storage, Stream Analytics)
 
 ---
 
-## 🚀 Lab Steps
+## 🚀 Steps
+
+### 1. Create an Azure Event Hub
+
+- Create a **Resource Group** (if not already created).
+- Provision an **Event Hubs namespace**.
+- Add an **Event Hub** inside the namespace.
+- Generate a **shared access policy** with `Send` and `Listen` permissions.
+
+### 2. Create a Storage Account
+
+- Provision an **Azure Storage account**.
+- Create a **container** to store Stream Analytics output.
+
+### 3. Simulate Event Data
+
+- Clone the lab repo:
+  ```bash
+  git clone https://github.com/MicrosoftLearning/dp-203-azure-data-engineer.git
+  cd dp-203-azure-data-engineer/Allfiles/Labs/17
+
+
+---
 
 
 
